@@ -1,5 +1,3 @@
-I’ve written this as if the repo were public or assessed — clean, readable, and honest about limitations.
-
 ### Commodity Tracker
 
 A modular, configuration-driven commodity analytics & research dashboard built with free data sources.
