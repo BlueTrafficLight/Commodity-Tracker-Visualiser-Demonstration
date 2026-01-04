@@ -1,4 +1,4 @@
-### Commodity Tracker
+# Commodity Tracker
 
 A modular, configuration-driven commodity analytics & research dashboard built with free data sources.
 
@@ -6,7 +6,7 @@ The project collects daily commodity prices, stores them locally, and provides a
 All analytics are pluggable, configurable, and easily extensible.
 
 ## Features
-# Data
+### Data
 
 Daily prices from free APIs (Yahoo Finance proxies)
 
@@ -14,7 +14,7 @@ Local SQLite storage
 
 One-off historical backfill + daily incremental updates
 
-# Analytics (Modular)
+### Analytics (Modular)
 
 Returns (1D / 7D / 30D)
 
@@ -30,7 +30,7 @@ Correlation heatmap
 
 PCA factor analysis (rolling window)
 
-# Architecture
+### Architecture
 
 Config-driven indicators (YAML)
 
@@ -46,7 +46,7 @@ analytics logic
 
 visualization
 
-# UI
+### UI
 
 Streamlit dashboard
 
@@ -57,19 +57,19 @@ Multi-panel technical charts
 Hot-reload indicator configuration
 
 ## Getting Started
-# 1️ Install dependencies
+### 1️ Install dependencies
 python -m venv .venv
 source .venv/bin/activate   # or .venv\Scripts\activate on Windows
 pip install -r requirements.txt
 
-# 2️ Fetch data
+### 2️ Fetch data
 python run_update.py
 python backfill_history.py   # optional (run once)
 
-# 3️ Launch dashboard
+### 3️ Launch dashboard
 streamlit run dashboard_streamlit.py
 
-# Configuration
+### Configuration
 
 Indicators are controlled via:
 
