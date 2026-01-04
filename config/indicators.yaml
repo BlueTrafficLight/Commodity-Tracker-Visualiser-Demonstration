@@ -1,0 +1,73 @@
+indicators:
+
+  returns:
+    enabled: true
+
+  momentum:
+    enabled: true
+
+  trend:
+    enabled: true
+    params:
+      sma_fast: 50
+      sma_slow: 200
+
+  volatility:
+    enabled: true
+    params:
+      vol_short: 30
+      vol_long: 90
+
+  backtest:
+    enabled: false
+    depends_on: [trend]
+
+  pca:
+    enabled: true
+    depends_on: [returns]
+    params:
+      window: 60
+      min_coverage: 0.7
+
+  rsi:
+    enabled: true
+    params:
+      window: 14
+
+  macd:
+    enabled: true
+    params:
+      fast: 12
+      slow: 26
+      signal: 9
+
+categories:
+  energy:
+    returns: true
+    momentum: true
+    trend: true
+    volatility: true
+    backtest: false
+    pca: true
+    rsi: true
+    macd: true
+
+  metals:
+    returns: true
+    momentum: true
+    trend: true
+    volatility: true
+    backtest: false
+    pca: true
+    rsi: true
+    macd: true
+
+  agriculture:
+    returns: true
+    momentum: false
+    trend: true
+    volatility: true
+    backtest: false
+    pca: false
+    rsi: true
+    macd: true
